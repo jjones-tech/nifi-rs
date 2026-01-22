@@ -252,7 +252,7 @@ public abstract class RustProcessor extends AbstractProcessor {
             if (info.getTypeName().equals(getRustProcessorType())) {
                 // Load property descriptors
                 rustPropertyDescriptors = new ArrayList<>();
-                for (nifi.rust.NifiRustProto.PropertyDescriptor pd : info.getPropertiesList()) {
+                for (org.apache.nifi.rust.grpc.PropertyDescriptor pd : info.getPropertiesList()) {
                     PropertyDescriptor.Builder builder = new PropertyDescriptor.Builder()
                             .name(pd.getName())
                             .displayName(pd.getDisplayName())
