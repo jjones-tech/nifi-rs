@@ -33,6 +33,7 @@
         <module>nifi-code-coverage</module>
         <module>nifi-mock</module>
         <module>nifi-extension-bundles</module>
+        <module>nifi-rust-framework-bundle</module>
         <module>nifi-extension-bom</module>
         <module>nifi-assembly</module>
         <module>nifi-docs</module>

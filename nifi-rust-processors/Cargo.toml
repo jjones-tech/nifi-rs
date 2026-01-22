@@ -1,0 +1,43 @@
+[package]
+name = "nifi-rust-processors"
+version = "0.1.0"
+edition = "2021"
+description = "FROST NiFi processors - frost-bus, kaniko, K8s deployment"
+license = "Apache-2.0"
+
+[dependencies]
+# NiFi API
+nifi-rust-api = { path = "../nifi-rust-api" }
+
+# FROST crates - use git for now since they're in a different repo
+# In production, these would be published to crates.io or a private registry
+# frost-bus = { git = "https://github.com/frost/frost", branch = "main" }
+# frost-build = { git = "https://github.com/frost/frost", branch = "main" }
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+async-trait = "0.1"
+
+# Serialization
+bytes = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# k8s API
+kube = { version = "0.98", features = ["runtime", "client", "derive"] }
+k8s-openapi = { version = "0.24", features = ["v1_32"] }
+
+# Error handling
+anyhow = "1"
+thiserror = "1"
+
+# Logging
+tracing = "0.1"
+
+# Utils
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = "0.4"
+inventory = "0.3"
+
+# Redis for frost-bus connection
+redis = { version = "0.27", features = ["tokio-comp", "connection-manager"] }

@@ -1,0 +1,4 @@
+org.apache.nifi.rust.processors.ConsumeFrostBus
+org.apache.nifi.rust.processors.PublishFrostBus
+org.apache.nifi.rust.processors.TriggerKanikoBuild
+org.apache.nifi.rust.processors.DeployToK8s

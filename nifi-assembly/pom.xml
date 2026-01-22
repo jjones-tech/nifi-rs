@@ -281,6 +281,12 @@ language governing permissions and limitations under the License. -->
         </dependency>
         <dependency>
             <groupId>org.apache.nifi</groupId>
+            <artifactId>nifi-rust-framework-nar</artifactId>
+            <version>2.8.0-SNAPSHOT</version>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.nifi</groupId>
             <artifactId>nifi-standard-content-viewer-nar</artifactId>
             <version>2.8.0-SNAPSHOT</version>
             <type>nar</type>
