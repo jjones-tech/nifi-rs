@@ -17,7 +17,7 @@
 package org.apache.nifi.rust;
 
 import com.google.protobuf.ByteString;
-import nifi.rust.NifiRustProto.*;
+import org.apache.nifi.rust.grpc.*;
 import org.apache.nifi.annotation.lifecycle.OnScheduled;
 import org.apache.nifi.annotation.lifecycle.OnStopped;
 import org.apache.nifi.components.PropertyDescriptor;

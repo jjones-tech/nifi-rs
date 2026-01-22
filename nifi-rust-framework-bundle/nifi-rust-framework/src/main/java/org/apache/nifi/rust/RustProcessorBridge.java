@@ -19,8 +19,8 @@ package org.apache.nifi.rust;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
-import nifi.rust.NifiRustProto.*;
-import nifi.rust.RustProcessorServiceGrpc;
+import org.apache.nifi.rust.grpc.*;
+import org.apache.nifi.rust.grpc.RustProcessorServiceGrpc;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
