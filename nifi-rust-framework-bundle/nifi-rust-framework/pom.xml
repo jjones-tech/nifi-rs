@@ -35,12 +35,11 @@
     </properties>
 
     <dependencies>
-        <!-- NiFi API (external, version managed by root pom) -->
+        <!-- NiFi API (version managed by nifi-standard-services-api-bom) -->
         <dependency>
             <groupId>org.apache.nifi</groupId>
             <artifactId>nifi-api</artifactId>
         </dependency>
-        <!-- NiFi Utils (internal, version inherited from parent) -->
         <dependency>
             <groupId>org.apache.nifi</groupId>
             <artifactId>nifi-utils</artifactId>
